@@ -85,7 +85,7 @@ nav a img {
   height: 723px;
   position: fixed;
   top: 100px;
-  background-image: url("/Users/desmond/Documents/Code Projects/portfolio/resources/banner.jpeg");
+  background-image: url("/resources/banner.jpeg");
   background-size: cover;
   background-position: center center;
 }
