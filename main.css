@@ -5,6 +5,7 @@
 }
 
 
+
 html, body {
   height: 100%;
   margin: 0;
@@ -26,6 +27,8 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+
+
 
 header {
   height: 100px;
@@ -248,7 +251,6 @@ nav a img {
  text-decoration: none;
 }
 
-
 .wrapper::after {
   content: "";
   clear: both;
@@ -274,7 +276,6 @@ nav a img {
   float: left;
   padding-left: 0;
   padding-right: 0;
- 
 }
 
 .photos img {
@@ -288,7 +289,7 @@ nav a img {
 }
 
 
-.photos img:hover {
+.photos img:active {
   -webkit-transform: scale(1.5);
 }
 
@@ -767,6 +768,10 @@ nav {
 
   #footer h2 {
     font-size: 25px;
+  }
+
+  #footer h4 {
+    font-size: 15px;
   }
 
 }
