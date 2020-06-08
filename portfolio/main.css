@@ -1,0 +1,773 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(246, 252, 250);
+    text-align: center;
+  }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  height: 100px;
+  background: black;
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+}
+
+.logo {
+  width: 10%;
+  float: left;
+  line-height: 100px;
+}
+
+
+.logo a {
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  letter-spacing: 7px;
+}
+
+.logo a:hover {
+  color: red;
+}
+
+  
+nav {
+  float: right;
+  line-height: 100px;
+}
+
+nav a {
+    padding: 0 20px;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin-right: 0px;
+  }
+
+nav a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+nav a:active {
+    color: blueviolet;
+}
+
+nav a img {
+      height: 40px;
+  }
+  
+.banner-area {
+  width: 100%;
+  height: 723px;
+  position: fixed;
+  top: 100px;
+  background-image: url("/Users/desmond/Documents/Code Projects/portfolio/resources/banner.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner-area h2 {
+  padding-top: 8%;
+  font-size: 40px;
+  color: white;
+  text-align: left;
+  margin-left: 70px;
+  font-style: oblique;
+}
+
+.banner-area h1 {
+  padding-top: 10px;
+  font-size: 70px;
+  color: white;
+  text-align: left;
+  margin-left: 70px;
+  font-weight: bold;
+}
+
+
+.content-area {
+  width: 100%;
+  position: relative;
+  top: 1000px;
+  background: rgb(243, 240, 240);
+  height: 100%;
+  overflow: scroll;
+}
+
+
+.content-area h2 {
+  letter-spacing: 4px;
+  padding-top: 30px;
+  font-size: 40px;
+  margin: 0;
+  color:black;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.content-area p {
+  padding: 2% 0;
+  line-height: 30px;
+  text-align: left;
+}
+
+.content-area img {
+  height: 200px;
+  width: auto;
+  border-radius: 20px;
+  border: solid black 4px;
+}
+
+.fancy {
+  line-height: 0.1;
+  text-align: center;
+}
+
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  top: 0;
+  width: 80%;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+
+.skills-des {
+  float: left;
+  padding: 0px;
+  width: 25%;
+  padding: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  position: relative;
+}
+
+.img-des {
+  position: absolute;
+  float: left;
+  padding: 0px;
+  width: 25%;
+  padding: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  left: 115px;
+  top: 50;
+  text-align: center;
+  display: block;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+  font-weight: bolder;
+}
+
+
+
+.skills-des:hover .img-des {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.skills-des img {
+  border-radius: 100px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.column h3 {
+  color: rgb(151, 131, 19);
+  text-align: left;
+  font-size: 35px;
+}
+
+.column h3:hover {
+  opacity: 0.5;
+}
+
+.column h4 {
+  color:rgb(18, 94, 28);
+  text-align: left;
+  font-size: 20px;
+}
+
+.column h5 {
+  color: black;
+  text-align: left;
+  font-size: 20px;
+}
+
+
+
+.column a:hover {
+ text-decoration: none;
+}
+
+
+.wrapper::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.interests-wrap {
+  background-color: rgb(223, 223, 225);
+}
+
+
+.photography {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+.photos {
+  display: block;
+  padding-bottom: 50px;
+  margin: 0px;
+  float: left;
+  padding-left: 0;
+  padding-right: 0;
+ 
+}
+
+.photos img {
+  border: none;
+  border-radius: 5px;
+  height: 300px;
+  width: auto;
+  padding: 0 0 0 0;
+  margin: 0;
+  transition:transform 0.5s ease;
+}
+
+
+.photos img:hover {
+  -webkit-transform: scale(1.5);
+}
+
+
+
+
+.articles h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.articles h2:hover {
+  opacity: 0.5;
+}
+
+.articles a {
+  text-decoration: none;
+}
+
+.articles-wrap {
+  padding-bottom: 50px;
+}
+
+
+
+ #footer {
+    font-size: 12px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    background-color: white;
+ }
+
+ #footer h2 {
+   padding-bottom: 20px;
+ }
+
+ #footer h4 {
+   padding-top: 20px;
+   font-style: oblique;
+ }
+
+#footer .wrapper {
+  background-color: white;
+  width: 100%;
+}
+
+ #footer img {
+   height: 100px;
+   width: auto;
+   align-content: center;
+   border-radius: 2px;
+   border: none;
+   margin: 0;
+   padding: 0;
+   transition:transform 0.5s ease;
+ }
+
+
+#footer img:hover {
+  -webkit-transform: scale(2.0);
+}
+
+
+#footer .column {
+  width: 25%;
+  padding: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+#footer p {
+  text-align: center;
+  padding-bottom: 0;
+  bottom: 0;
+}
+
+
+
+
+@media only screen and (orientation: landscape) and (max-width: 1350px) {
+  nav {
+    visibility: hidden;
+  }
+  .logo {width: 100%;
+    float: left;
+    line-height: 50px;
+  }
+  .skills-des img {
+    border-radius: 100px;
+    height: 150px;
+  }
+  .banner-area h2 {
+    color: black;
+  }
+  .banner-area h1 {
+    color: black;
+  }
+ 
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1350px) {
+  nav {
+    visibility: hidden;
+  }
+  .logo {width: 100%;
+    float: left;
+    line-height: 50px;
+  }
+  .banner-area h2 {
+    color: black;
+  }
+  .banner-area h1 {
+    color: black;
+  }
+  
+}
+
+
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  nav {
+    visibility: hidden;
+  }
+  .logo {width: 100%;
+    float: left;
+    line-height: 50px;
+  }
+  .skills-des img {
+    border-radius: 100px;
+    height: 150px;
+  }
+  .banner-area h2 {
+    color: black;
+  }
+  .banner-area h1 {
+    color: black;
+  }
+ 
+  
+
+}
+
+@media only screen and (min-width: 411px) and (max-width: 414px) {
+  nav {
+    visibility: hidden;
+  }
+    
+  .logo {width: 100%;
+    float: left;
+    line-height: 50px;
+  }
+  
+  
+  .logo a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+  }
+  
+  .banner-area {
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    background-image: url("/Users/desmond/Documents/Code Projects/portfolio/resources/banner.jpeg");
+    background-size: cover;
+    background-position: right center;
+  }
+  
+  .banner-area h2 {
+    padding-top: 8%;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin-left: 70px;
+    font-style: oblique;
+  }
+  
+  .banner-area h1 {
+    padding-top: 10px;
+    font-size: 50px;
+    color: black;
+    text-align: left;
+    margin-left: 70px;
+    font-weight: bold;
+  }
+  
+  .skills-des {
+    float: left;
+    padding: 10px;
+    width: 50%;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    position: relative;
+  }
+  
+  .img-des {
+    position: absolute;
+    float: left;
+    padding: 0px;
+    width: 50%;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 115px;
+    top: 50;
+    text-align: center;
+    display: block;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    font-weight: bolder;
+  }
+  
+  
+  .skills-des img {
+    border-radius: 100px;
+    height: 100px;
+  }
+  
+  .wrapper {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+
+  .column {
+    float: left;
+    width: 100%;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .column img {
+    height: 150px;
+    float: left;
+  }
+  
+  .column h3 {
+    font-size: 30px;
+    float: left;
+  }
+  
+  .column h4 h5 {
+    font-size: 15px;
+    align-content: center;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 361px) and (max-width: 410px) {
+  
+nav {
+  visibility: hidden;
+}
+  
+.logo {width: 100%;
+  float: left;
+  line-height: 50px;
+}
+
+
+.logo a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+
+.banner-area {
+  width: 100%;
+  position: fixed;
+  top: 100px;
+  background-image: url("/Users/desmond/Documents/Code Projects/portfolio/resources/banner.jpeg");
+  background-size: cover;
+  background-position: right center;
+}
+
+.banner-area h2 {
+  padding-top: 8%;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  margin-left: 70px;
+  font-style: oblique;
+}
+
+.banner-area h1 {
+  padding-top: 10px;
+  font-size: 50px;
+  color: black;
+  text-align: left;
+  margin-left: 70px;
+  font-weight: bold;
+}
+
+.skills-des {
+  float: left;
+  padding: 10px;
+  width: 50%;
+  padding: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  position: relative;
+}
+
+.img-des {
+  position: absolute;
+  float: left;
+  padding: 0px;
+  width: 50%;
+  padding: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  left: 115px;
+  top: 50;
+  text-align: center;
+  display: block;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+  font-weight: bolder;
+}
+
+
+
+.skills-des:hover .img-des {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.skills-des img {
+  border-radius: 100px;
+  height: 150px;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  padding: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.column img {
+  height: 150px;
+  float: left;
+}
+
+.column h3 {
+  font-size: 30px;
+  float: left;
+}
+
+.column h4 h5 {
+  font-size: 15px;
+}
+
+}
+
+@media only screen and (max-width:360px) {
+  nav {
+    visibility: hidden;
+  }
+    
+  .logo {width: 100%;
+    float: left;
+    line-height: 50px;
+  }
+  
+  
+  .logo a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+  }
+  
+  .banner-area {
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    background-image: url("/Users/desmond/Documents/Code Projects/portfolio/resources/banner.jpeg");
+    background-size: cover;
+    background-position: right center;
+  }
+  
+  .banner-area h2 {
+    padding-top: 8%;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin-left: 70px;
+    font-style: oblique;
+  }
+  
+  .banner-area h1 {
+    padding-top: 10px;
+    font-size: 50px;
+    color: black;
+    text-align: left;
+    margin-left: 70px;
+    font-weight: bold;
+  }
+  
+  .skills-des {
+    float: left;
+    padding: 10px;
+    width: 50%;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    position: relative;
+  }
+  
+  .img-des {
+    position: absolute;
+    float: left;
+    padding: 0px;
+    width: 50%;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 115px;
+    top: 50;
+    text-align: center;
+    display: block;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    font-weight: bolder;
+  }
+  
+  
+  
+  .skills-des:hover .img-des {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  
+  .skills-des img {
+    border-radius: 100px;
+    height: 100px;
+  }
+  
+  .column {
+    float: left;
+    width: 100%;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .column img {
+    height: 150px;
+    float: left;
+  }
+  
+  .column h3 {
+    font-size: 30px;
+    float: left;
+  }
+  
+  .column h4 h5 {
+    font-size: 15px;
+  }
+
+  #footer img {
+    height: 50px;
+  }
+
+  #footer h2 {
+    font-size: 25px;
+  }
+
+}
+
