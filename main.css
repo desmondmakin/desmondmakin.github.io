@@ -449,6 +449,10 @@ nav a img {
   nav {
     visibility: hidden;
   }
+  header {
+    height: 50px;
+  }
+
   .logo {width: 100%;
     float: left;
     line-height: 50px;
@@ -476,6 +480,10 @@ nav a img {
   .logo {width: 100%;
     float: left;
     line-height: 50px;
+  }
+
+  header {
+    height: 50px;
   }
   
   
@@ -590,6 +598,10 @@ nav {
   line-height: 50px;
 }
 
+header {
+  height: 50px;
+}
+
 
 .logo a {
   text-decoration: none;
@@ -699,6 +711,9 @@ nav {
     line-height: 50px;
   }
   
+  header {
+    height: 50px;
+  }
   
   .logo a {
     text-decoration: none;
