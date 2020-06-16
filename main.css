@@ -429,6 +429,7 @@ nav a img {
     float: left;
     line-height: 50px;
   }
+  
   .banner-area h2 {
     color: black;
   }
@@ -449,6 +450,10 @@ nav a img {
   }
   header {
     height: 50px;
+  }
+
+  .banner-area {
+    top: 50px;
   }
 
   .logo {width: 100%;
@@ -494,7 +499,7 @@ nav a img {
   .banner-area {
     width: 100%;
     position: fixed;
-    top: 100px;
+    top: 50px;
     background-image: url("/resources/banner.jpeg");
     background-size: cover;
     background-position: right center;
@@ -610,7 +615,7 @@ header {
 .banner-area {
   width: 100%;
   position: fixed;
-  top: 100px;
+  top: 50px;
   background-image: url("/resources/banner.jpeg");
   background-size: cover;
   background-position: right center;
@@ -722,7 +727,7 @@ header {
   .banner-area {
     width: 100%;
     position: fixed;
-    top: 100px;
+    top: 50px;
     background-image: url("/resources/banner.jpeg");
     background-size: cover;
     background-position: right center;
