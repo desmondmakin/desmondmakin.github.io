@@ -116,7 +116,7 @@ nav a img {
   width: 100%;
   position: relative;
   top: 1000px;
-  background: rgb(243, 240, 240);
+  background: white;
   height: 100%;
   overflow: scroll;
 }
@@ -289,8 +289,8 @@ nav a img {
 }
 
 
-.photos img:active {
-  -webkit-transform: scale(1.5);
+.photos img :hover {
+  -webkit-transform: scale(2.0);
 }
 
 
@@ -369,7 +369,36 @@ nav a img {
   bottom: 0;
 }
 
+.content {
+  width: 100%;
+  position: static;
+  top: 1000px;
+  background: white;
+  height: 100%;
+  overflow: scroll;
+}
 
+.content h2 {
+  padding-top: 100px;
+  text-align: left;
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+
+.content img {
+  width: auto;
+  height: 295px;
+  float: left;
+  border: black solid 1px;
+  border-radius: 5px;
+}
+
+.content p {
+  float: left;
+  text-align: justify;
+  width: 525px;
+  padding-top: 25px;
+}
 
 
 @media only screen and (orientation: landscape) and (max-width: 1350px) {
@@ -407,7 +436,11 @@ nav a img {
   .banner-area h1 {
     color: black;
   }
-  
+  header {
+    height: 50px;
+  }
+
+
 }
 
 
