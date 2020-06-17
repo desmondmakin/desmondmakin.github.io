@@ -142,7 +142,8 @@ nav a img {
   height: 200px;
   width: auto;
   border-radius: 20px;
-  border: solid black 4px;
+  border: solid black 2px;
+  box-shadow: 6px 6px 6px 6px rgba(0,0,0,.2);
 }
 
 .fancy {
@@ -346,6 +347,7 @@ nav a img {
    margin: 0;
    padding: 0;
    transition:transform 0.5s ease;
+   box-shadow: none;
  }
 
 
@@ -700,6 +702,10 @@ header {
 
 .column h4 h5 {
   font-size: 15px;
+}
+
+#footer img {
+  height: 80px;
 }
 
 }
