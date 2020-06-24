@@ -77,23 +77,23 @@ nav a img {
   width: 100%;
   height: 800px;
   position: fixed;
-  background-image: url("resources/mountains-banner.jpg");
+  background-image: url("/resources/mountains-banner.jpg");
   top: 20px;
   background-color: white;
   background-position: center center;
   background-size: cover;
 }
 
-.banner-area h2 {
-  padding-top: 8%;
-  font-size: 40px;
-  color: black;
+.banner-area h5 {
+  padding-top: 20px;
+  font-size: 15px;
+  color: rgb(18, 94, 28);
   text-align: center;
   font-style: oblique;
 }
 
 .banner-area h1 {
-  padding-top: 25px;
+  padding-top: 10%;
   font-size: 50px;
   color: black;
   text-align: center;
@@ -104,8 +104,14 @@ nav a img {
   height: 500px;
   width: auto;
   border-radius: 500px;
-  margin-top: 35px;
+  margin-top: 25px;
   box-shadow: 10px 10px 10px 10px rgba(0,0,0,.2);
+}
+
+.banner-area p {
+  margin-top: 50px;
+  text-align: justify;
+  font-weight: bolder;
 }
 
 .content-area {
@@ -518,22 +524,10 @@ nav a img {
     background-size: cover;
   }
   
-  .banner-area h2 {
-    padding-top: 8%;
-    font-size: 20px;
-    color: black;
-    text-align: left;
-    margin-left: 0px;
-    font-style: oblique;
-  }
+  
   
   .banner-area h1 {
-    padding-top: 10px;
     font-size: 25px;
-    color: black;
-    text-align: left;
-    margin-left: 0px;
-    font-weight: bold;
   }
   
   .skills-des {
@@ -637,21 +631,10 @@ header {
   background-size: cover;
 }
 
-.banner-area h2 {
-  padding-top: 8%;
-  color: black;
-  text-align: left;
-  margin-left: 0px;
-  font-style: oblique;
-}
 
 .banner-area h1 {
   font-size: 25px;
-  color: black;
-  text-align: left;
-  margin-left: 0px;
-  font-weight: bold;
-  padding-top: auto;
+  
 }
 
 .skills-des {
@@ -755,23 +738,8 @@ header {
     
   }
   
-  .banner-area h2 {
-    padding-top: 8%;
-    font-size: 20px;
-    color: black;
-    text-align: left;
-    margin-left: 0px;
-    font-style: oblique;
-  }
   
   .banner-area h1 {
-    padding-top: 10px;
-    font-size: 50px;
-    color: black;
-    text-align: left;
-    margin-left: 0px;
-    font-weight: bold;
-    padding-top: auto;
     font-size: 25px;
   }
   
