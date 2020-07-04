@@ -32,12 +32,7 @@ body {
 
 header {
   height: 100px;
-  background: #ffffff;
   width: 100%;
-  z-index: 12;
-  position: fixed;
-  box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
-  opacity: 0.95;
 }
 
 
@@ -51,17 +46,21 @@ header {
   
 nav {
   line-height: 100px;
+  float: right;
 }
 
 nav a {
-    padding: 0 20px;
-    color: black;
+    padding: 0 10px;
+    color: white;
     letter-spacing: 3px;
     font-size: 20px;
+    margin-right: 0px;
   }
 
 nav a:hover {
     text-decoration: none;
+    color: black;
+    
 }
 
 nav a:active {
@@ -73,29 +72,46 @@ nav a img {
   }
 
 
+#title span:before,
+#title span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 2px solid white;
+    top: 0;
+    width: 100%;
+  }
+#title span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+#title span:after {
+    left: 100%;
+    margin-left: 15px;
+  } 
+
 .banner-area {
   width: 100%;
-  height: 800px;
+  height: 900px;
   position: fixed;
-  background-image: url("/resources/mountains-banner.jpg");
-  top: 20px;
+  background-image: url("/resources/5468BA0F-B432-4B56-AC57-0BCB37EEC949_1_201_a.jpeg");
   background-color: white;
   background-position: center center;
   background-size: cover;
 }
 
 .banner-area h5 {
-  padding-top: 20px;
+  padding-top: 18px;
   font-size: 15px;
-  color: rgb(18, 94, 28);
+  color: white;
   text-align: center;
   font-style: oblique;
 }
 
 .banner-area h1 {
-  padding-top: 10%;
+  padding-top: 16.5%;
   font-size: 50px;
-  color: black;
+  color: white;
   text-align: center;
   font-weight: bold;
 }
@@ -118,7 +134,7 @@ nav a img {
   width: 100%;
   position: relative;
   top: 1000px;
-  background: white;
+  background: #ffffff;
   height: 100%;
   overflow: scroll;
 }
@@ -126,12 +142,12 @@ nav a img {
 
 .content-area h2 {
   letter-spacing: 4px;
-  padding-top: 30px;
+  padding-top: 70px;
   font-size: 40px;
   margin: 0;
   color:black;
   font-weight: bolder;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 .content-area p {
@@ -176,14 +192,31 @@ nav a img {
   margin-left: 15px;
 }
 
+#about-me img {
+  height: 400px;
+  width: auto;
+  border: none;
+}
+
+#about-me {
+  background-color: #000033;
+  width: 100%;
+  height: 100%;
+}
+
+#about-me h2{
+  color: white;
+}
+#about-me p {
+  color: white;
+}
 
 .skills-des {
   float: left;
   padding: 0px;
-  width: 25%;
-  padding: 5px;
-  padding-top: 20px;
   padding-bottom: 20px;
+  padding-top: 20px;
+  width: 25%;
   display: block;
   position: relative;
 }
@@ -207,10 +240,12 @@ nav a img {
 
 
 
+
 .skills-des:hover .img-des {
   opacity: 1;
   visibility: visible;
 }
+
 
 
 .skills-des img {
@@ -267,17 +302,17 @@ nav a img {
 .photography {
   width: 100%;
   margin: 0 auto;
+  padding: 0;
 }
 
 
-
 .photos {
-  display: block;
   padding-bottom: 50px;
   margin: 0px;
   float: left;
   padding-left: 0;
   padding-right: 0;
+  padding-top: 0;
 }
 
 .photos img {
@@ -287,13 +322,15 @@ nav a img {
   width: auto;
   padding: 0 0 0 0;
   margin: 0;
-  transition:transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 
-.photos img :hover {
-  -webkit-transform: scale(2.0);
+
+.photos img:hover {
+  -webkit-transform: scale(1.5);
 }
+
 
 
 
@@ -301,6 +338,7 @@ nav a img {
 .articles h2 {
   font-size: 20px;
   letter-spacing: 2px;
+  padding-top: 35px;
 }
 
 .articles h2:hover {
@@ -313,6 +351,7 @@ nav a img {
 
 .articles-wrap {
   padding-bottom: 50px;
+  
 }
 
 
@@ -424,12 +463,6 @@ nav a img {
     height: 150px;
   }
   
-  .banner-area h2 {
-    color: black;
-  }
-  .banner-area h1 {
-    color: black;
-  }
  
 }
 
@@ -437,7 +470,8 @@ nav a img {
   .buttons {
     visibility: hidden;
   }
-  .logo {width: 100%;
+  .logo {
+    width: 100%;
     float: left;
     line-height: 50px;
   }
@@ -446,12 +480,6 @@ nav a img {
     height: 1000px;
   }
 
-  .banner-area h2 {
-    color: black;
-  }
-  .banner-area h1 {
-    color: black;
-  }
   header {
     height: 50px;
   }
@@ -469,8 +497,7 @@ nav a img {
   }
 
   .banner-area {
-    top: 50px;
-    height: 950px;
+    height: 1024px;
   }
 
   .logo {width: 100%;
@@ -481,12 +508,7 @@ nav a img {
     border-radius: 100px;
     height: 150px;
   }
-  .banner-area h2 {
-    color: black;
-  }
-  .banner-area h1 {
-    color: black;
-  }
+ 
  
   
 
@@ -510,7 +532,6 @@ nav a img {
   .logo a {
     text-decoration: none;
     font-size: 30px;
-    color: black;
   }
   
   .banner-area img {
@@ -520,14 +541,14 @@ nav a img {
   .banner-area {
     width: 100%;
     position: fixed;
-    top: 50px;
     background-size: cover;
   }
   
   
-  
+
   .banner-area h1 {
     font-size: 25px;
+    padding-top: 20%;
   }
   
   .skills-des {
@@ -616,7 +637,6 @@ header {
 .logo a {
   text-decoration: none;
   font-size: 30px;
-  color: black;
 }
 
 .banner-area img {
@@ -627,15 +647,15 @@ header {
 .banner-area {
   width: 100%;
   position: fixed;
-  top: 50px;
   background-size: cover;
 }
 
 
 .banner-area h1 {
   font-size: 25px;
-  
 }
+
+
 
 .skills-des {
   float: left;
@@ -711,7 +731,8 @@ header {
     visibility: hidden;
   }
     
-  .logo {width: 100%;
+  .logo {
+    width: 100%;
     float: left;
     line-height: 50px;
   }
@@ -723,21 +744,16 @@ header {
   .logo a {
     text-decoration: none;
     font-size: 30px;
-    color: black;
   }
   
-  .banner-area img {
-    height: 300px;
-  }
+ 
 
   .banner-area {
     width: 100%;
     position: fixed;
-    top: 50px;
     background-size: cover;
     
   }
-  
   
   .banner-area h1 {
     font-size: 25px;
@@ -824,5 +840,11 @@ header {
   .banner-area img {
     height: 300px;
   }
+
+  #about-me img{
+    height: 250px;
+
+  }
+ 
 
 }

@@ -10,6 +10,7 @@
     <link href="main.css" type="text/css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168832305-1"></script>
 <script>
@@ -23,42 +24,52 @@
 </head>
 <body>
   <div class="main">
-    <header>
-        <div class="wrapper">
-          <nav>
-            <div class="logo">
-              <a id="resume" href="/resources/Makin Resume.pdf" download="/resources/Makin Resume.pdf" target="_blank">Resume</a>
-            </div>
-            <div class="buttons">
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#interests">Interests</a>
-            </div>
-          </nav>
-        </div>
-    </header>
+    
       <div class="banner-area">
+        <header>
+          <div class="wrapper">
+            <nav>
+              <div class="logo">
+                <a id="resume" href="/resources/Makin Resume.pdf" download="/resources/Makin Resume.pdf" target="_blank">Resume</a>
+              </div>
+              <div class="buttons">
+               <a href="#about-me">About Me</a> 
+              <a href="#skills">Skills</a>
+              <a href="#experience">Experience</a>
+              <a href="#education">Education</a>
+              <a href="#interests">Interests</a>
+              </div>
+            </nav>
+          </div>
+      </header>
         <div class="wrapper">
-          <h1 data-aos="fade-up" data-aos-duration="1000" class="fancy"><span>Desmond Makin</span></h1>
-          <h5 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">BSc in Business Administration & Finance</h5>
-        </div>
-        <div class="wrapper">
-            <div data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000"><img src="/resources/new-headshot.jpeg" alt="new-headshot"></div>
+          <h1 id="title" data-aos="fade-up" data-aos-duration="1000" class="fancy"><span>Desmond Makin</span></h1>
+          <h5 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">BSc in Business Administration & Finance</h5> 
         </div>
       </div>
       <div class="content-area">
-        <div id="skills">
-          <br>
-          <br>
-          <br>
-          <br>
+        <div id='about-me'>
+          <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">About Me</h2>
+          <div class="wrapper">
+            <div class="column">
+            <div data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" data-aos-once="true"><img src="/resources/new-headshot.jpeg" alt="new-headshot"></div>
+            </div>
+            <div class="column">
+              <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" data-aos-once="true">Born and raised in Lethbridge, Alberta.
+                I'm seeking opportunities in consulting, marketing, and finance.
+                My background in business combined with my technical knowledge allows me to 
+                perform advanced analyses and draw conclusions from complex datasets. Some of my interests 
+                are in how emerging tech can be used to bust bottlenecks and create impactful, sustainable solutions.
+              </p>
+            </div>
+        </div> 
         </div>
+        <div id="skills">
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="wrapper">
           <h2 data-aos="fade-up" data-aos-duration="1000" class="fancy" data-aos-once="true"><span>Skills</span></h2>
           <div class="skills-des">
             <img src="/resources/python-logo-3.jpg" alt="python logo">
-            <p class="img-des">Python</p>
+              <p class="img-des">Python</p>
           </div>
           <div class="skills-des">
             <img src="/resources/R-logo.png" alt="R programming">
@@ -89,12 +100,8 @@
             <p class="img-des">Google Analytics</p>
           </div>
         </div>
+      </div>
         <div id="experience">
-          <br>
-          <br>
-          <br>
-          <br>
-        </div>
         <div class="wrapper">
             <h2 data-aos="fade-up" data-aos-duration="1000" class="fancy" data-aos-once="true"><span>Experience</span></h2>
             <div class="column">
@@ -192,12 +199,8 @@
               </p>
             </div>
           </div>
-          <div id="education">
-            <br>
-            <br>
-            <br>
-            <br>
-          </div>
+        </div>
+        <div id="education">
         <div class="wrapper">
           <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="fancy"><span>Education</span></h2>
           <div class="column">
@@ -251,19 +254,15 @@
               </p>
             </div>
         </div>
+      </div>
         <div class="interests-wrap">
-        <div id="interests">
-          <br>
-          <br>
-          <br>
-          <br>
+          <div id="interests">
         </div>
-        <div class="photograhy">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-once="true" class="photography">
           <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-once="true" class="fancy"><span>Interests</span></h2>
           <br>
           <br>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-once="true" ><h4><em>Some pictures I've taken</em></h4></div>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" data-aos-once="true"><h4><em>Some pictures I've taken</em></h4></div>
           <div class="photos">
             <img src="/resources/volleyball.jpeg" alt="beach volleyball">
             <img src="/resources/travelling.jpeg" alt="travelling">
@@ -277,7 +276,6 @@
             <img src="/resources/lake louise.jpeg" alt="lake louise">
             <img src="/resources/whitefish.jpeg" alt="whitefish montanta">
             <img src="/resources/waterton.jpeg" alt="waterton national park">
-          </div>
           </div>
         </div>
         <div class="articles-wrap">
@@ -298,29 +296,32 @@
       <h4 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="22" data-aos-once="true">The best way to reach me is through LinkedIn messages or email.</h4>
       <div class="column">
         <a href="https://www.linkedin.com/in/desmond-makin-a7980218a/" target="_blank">
-          <div data-aos="fade-down" data-aos-duration="1000" data-aos-once="true"><img src="/resources/linkedin-2.png" alt="LinkedIn Logo"></a></div>
-      </div>
+          <img data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" src="/resources/linkedin-2.png" alt="LinkedIn Logo"></a>
+    </div>
       <div class="column">
         <a href="https://www.facebook.com/desmond.makin.39" target="_blank">
-            <div data-aos="fade-down" data-aos-duration="1000" data-aos-once="true"><img src="/resources/facebook-2.png" alt="Facebook Logo"></a></div>
+          <img data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" src="/resources/facebook-2.png" alt="Facebook Logo"></a>
       </div>
       <div class="column">
         <a href="https://www.instagram.com/desmakin/" target="_blank">
-          <div data-aos="fade-down" data-aos-duration="1000" data-aos-once="true"><img src="/resources/logo-instagram-png-13547.png" alt="Instagram Logo"></a></div>
+          <img data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" src="/resources/logo-instagram-png-13547.png" alt="Instagram Logo"></a>
       </div>
       <div class="column">
         <a href="mailto:desmond.makin7@gmail.com" target="_blank">
-          <div data-aos="fade-down" data-aos-duration="1000" data-aos-once="true"><img src="/resources/mail.png" alt="gmail"></a></div>
-        </a>
+          <img data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" src="/resources/mail.png" alt="gmail"></a>
       </div>
-    </div>
-    <div class="wrapper">
-      <p>&copy Desmond Makin 2020</p>
-    </div>
-   </div> 
-  </div>
+      </div>
+      <div class="wrapper">
+        <p>&copy Desmond Makin 2020</p>
+      </div>
+  </div> 
+  
+  </div><!-- Content-Area closing tag-->
+  
+</div><!-- Main closing tag -->
+
     
-</div> 
+   
 
 
 
