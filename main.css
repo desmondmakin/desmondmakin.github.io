@@ -19,7 +19,7 @@ html, body {
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(246, 252, 250);
+    background-color: white;
     text-align: center;
   }
 
@@ -29,11 +29,25 @@ body {
 }
 
 
+.arrow {
+  font: bolder;
+  height: 20px;
+  width: auto;
+  border: none;
+  box-shadow: none;
+  margin-top: 500px;
+  transition: ease 0.5s;
+}
+
+.arrow:hover {
+  margin-top: 505px;
+}
 
 header {
   height: 100px;
   width: 100%;
 }
+
 
 
 .logo {
@@ -45,7 +59,6 @@ header {
 }
   
 nav {
-  line-height: 100px;
   float: right;
 }
 
@@ -67,9 +80,6 @@ nav a:active {
     color: blueviolet;
 }
 
-nav a img {
-      height: 40px;
-  }
 
 
 #title span:before,
@@ -92,12 +102,13 @@ nav a img {
 
 .banner-area {
   width: 100%;
-  height: 900px;
+  height: 100%;
   position: fixed;
   background-image: url("/resources/5468BA0F-B432-4B56-AC57-0BCB37EEC949_1_201_a.jpeg");
   background-color: white;
   background-position: center center;
   background-size: cover;
+  
 }
 
 .banner-area h5 {
@@ -109,26 +120,16 @@ nav a img {
 }
 
 .banner-area h1 {
-  padding-top: 16.5%;
+  padding-top: 140px;
   font-size: 50px;
   color: white;
   text-align: center;
   font-weight: bold;
+  position: relative;
 }
 
-.banner-area img {
-  height: 500px;
-  width: auto;
-  border-radius: 500px;
-  margin-top: 25px;
-  box-shadow: 10px 10px 10px 10px rgba(0,0,0,.2);
-}
 
-.banner-area p {
-  margin-top: 50px;
-  text-align: justify;
-  font-weight: bolder;
-}
+
 
 .content-area {
   width: 100%;
@@ -211,12 +212,20 @@ nav a img {
   color: white;
 }
 
+#skills {
+  background-color: white;
+  height: 750px;
+}
+
+
+
 .skills-des {
   float: left;
   padding: 0px;
-  padding-bottom: 20px;
-  padding-top: 20px;
   width: 25%;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   display: block;
   position: relative;
 }
@@ -250,6 +259,7 @@ nav a img {
 
 .skills-des img {
   border-radius: 100px;
+  
 }
 
 .column {
@@ -443,6 +453,9 @@ nav a img {
 }
 
 
+
+
+
 @media only screen and (min-width: 1351px) and (max-width: 1366px){
   .banner-area {
     height: 1000px;
@@ -462,6 +475,10 @@ nav a img {
     border-radius: 100px;
     height: 150px;
   }
+
+  #about-me p {
+    padding: 65px;
+  }
   
  
 }
@@ -476,9 +493,16 @@ nav a img {
     line-height: 50px;
   }
   
-  .banner-area {
-    height: 1000px;
+  .banner-area h1 {
+    padding-top: 200px;
   }
+  .arrow {
+    margin-top: 670px;
+  }
+
+.arrow:hover {
+  margin-top: 675px;
+}
 
   header {
     height: 50px;
@@ -496,8 +520,15 @@ nav a img {
     height: 50px;
   }
 
-  .banner-area {
-    height: 1024px;
+  .banner-area h1 {
+    padding-top: 200px;
+  }
+
+  .arrow {
+    margin-top: 650px;
+  }
+  .arrow:hover {
+    margin-top: 655px;
   }
 
   .logo {width: 100%;
@@ -509,10 +540,12 @@ nav a img {
     height: 150px;
   }
  
- 
   
 
 }
+
+
+
 
 @media only screen and (min-width: 411px) and (max-width: 414px) {
   .buttons {
@@ -533,10 +566,17 @@ nav a img {
     text-decoration: none;
     font-size: 30px;
   }
-  
-  .banner-area img {
-    height: 300px;
+
+  .arrow {
+    margin-top: 465px;
+    transition: ease 0.5s;
   }
+  
+  .arrow:hover {
+    margin-top: 470px;
+  }
+  
+
 
   .banner-area {
     width: 100%;
@@ -570,7 +610,7 @@ nav a img {
     padding: 5px;
     padding-top: 20px;
     padding-bottom: 20px;
-    left: 115px;
+    left: 100px;
     top: 50;
     text-align: center;
     display: block;
@@ -583,6 +623,7 @@ nav a img {
   .skills-des img {
     border-radius: 100px;
     height: 100px;
+    margin-bottom: 20px;
   }
   
   .wrapper {
@@ -616,15 +657,129 @@ nav a img {
 }
 
 
+@media only screen and (min-width: 375px) and (max-width: 410px){
+  .buttons {
+    visibility: hidden;
+  }
+    
+  .logo {
+    width: 100%;
+    float: left;
+    line-height: 50px;
+  }
+  
+  header {
+    height: 50px;
+  }
+  
+  
+  .logo a {
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  
+  
+  .banner-area {
+    width: 100%;
+    position: fixed;
+    background-size: cover;
+  }
+  
+  
+  .banner-area h1 {
+    font-size: 25px;
+    padding-top: 50px;
+  }
+  
+  .arrow {
+    margin-top: 445px;
+    transition: ease 0.5s;
+  }
+  
+  .arrow:hover {
+    margin-top: 450px;
+  }
+  
+  
+  .skills-des {
+    float: left;
+    padding: 10px;
+    width: 50%;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    display: block;
+    position: relative;
+  }
+  
+  .img-des {
+    position: absolute;
+    float: left;
+    padding: 0px;
+    width: 50%;
+    padding: 5px;
+    padding-top: 0px;
+    left: 115px;
+    top: 50;
+    text-align: center;
+    display: block;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    font-weight: bolder;
+  }
+  
+  
+  
+  .skills-des:hover .img-des {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  
+  .skills-des img {
+    border-radius: 100px;
+    height: 150px;
+    margin-bottom: 0px;
+    
+  }
+  
+  .column {
+    float: left;
+    width: 100%;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .column img {
+    height: 150px;
+    float: left;
+  }
+  
+  .column h3 {
+    font-size: 30px;
+    float: left;
+  }
+  
+  .column h4 h5 {
+    font-size: 15px;
+  }
+  
+  #footer img {
+    height: 80px;
+  }
+  
+  }
 
-
-@media only screen and (min-width: 361px) and (max-width: 410px) {
+@media only screen and (min-width: 361px) and (max-width: 374px) {
   
 .buttons {
   visibility: hidden;
 }
   
-.logo {width: 100%;
+.logo {
+  width: 100%;
   float: left;
   line-height: 50px;
 }
@@ -639,10 +794,7 @@ header {
   font-size: 30px;
 }
 
-.banner-area img {
-  height: 300px;
 
-}
 
 .banner-area {
   width: 100%;
@@ -653,8 +805,17 @@ header {
 
 .banner-area h1 {
   font-size: 25px;
+  padding-top: 50px;
 }
 
+.arrow {
+  margin-top: 233px;
+  transition: ease 0.5s;
+}
+
+.arrow:hover {
+  margin-top: 238px;
+}
 
 
 .skills-des {
@@ -663,7 +824,7 @@ header {
   width: 50%;
   padding: 5px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
   display: block;
   position: relative;
 }
@@ -674,8 +835,7 @@ header {
   padding: 0px;
   width: 50%;
   padding: 5px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
   left: 115px;
   top: 50;
   text-align: center;
@@ -696,6 +856,8 @@ header {
 .skills-des img {
   border-radius: 100px;
   height: 150px;
+  margin-bottom: 0px;
+  
 }
 
 .column {
@@ -737,28 +899,28 @@ header {
     line-height: 50px;
   }
   
-  header {
-    height: 50px;
-  }
   
   .logo a {
     text-decoration: none;
     font-size: 30px;
   }
   
- 
-
-  .banner-area {
-    width: 100%;
-    position: fixed;
-    background-size: cover;
-    
-  }
   
   .banner-area h1 {
     font-size: 25px;
+    padding-top: 55px;
   }
   
+  .arrow {
+    margin-top: 385px;
+    transition: ease 0.5s;
+  }
+  
+  .arrow:hover {
+    margin-top: 390px;
+  }
+
+
   .skills-des {
     float: left;
     padding: 10px;
@@ -837,13 +999,21 @@ header {
 }
 
 @media only screen and (max-width: 320px){
-  .banner-area img {
-    height: 300px;
-  }
 
   #about-me img{
     height: 250px;
+  }
 
+  .banner-area h1 {
+    padding-top: 15px;
+  }
+  .arrow {
+    margin-top: 300px;
+    transition: ease 0.5s;
+  }
+  
+  .arrow:hover {
+    margin-top: 305px;
   }
  
 
