@@ -58,6 +58,11 @@ header {
   display: inline;
 }
   
+.nav-wrapper {
+  width: 100%;
+  margin-top: 5px;
+}
+
 nav {
   float: right;
 }
@@ -67,12 +72,12 @@ nav a {
     color: white;
     letter-spacing: 3px;
     font-size: 20px;
-    margin-right: 0px;
   }
 
 nav a:hover {
     text-decoration: none;
-    color: black;
+    color: white;
+    opacity: 0.5;
     
 }
 
@@ -105,7 +110,6 @@ nav a:active {
   height: 100%;
   position: fixed;
   background-image: url("/resources/5468BA0F-B432-4B56-AC57-0BCB37EEC949_1_201_a.jpeg");
-  background-color: white;
   background-position: center center;
   background-size: cover;
   
