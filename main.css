@@ -4,7 +4,27 @@
   scroll-behavior: smooth;
 }
 
+.preload {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 3.0s ease;
+}
 
+.load-screen {
+  height: 300px;
+  position: absolute;
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
 
 html, body {
   height: 100%;
@@ -109,7 +129,7 @@ nav a:active {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-image: url("/resources/5468BA0F-B432-4B56-AC57-0BCB37EEC949_1_201_a.jpeg");
+  background-image: url("resources/5468BA0F-B432-4B56-AC57-0BCB37EEC949_1_201_a.jpeg");
   background-position: center center;
   background-size: cover;
   
