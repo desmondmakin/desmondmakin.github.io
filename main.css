@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 3.0s ease;
+  transition: opacity 0.5s ease;
 }
 
 .load-screen {
@@ -129,7 +129,7 @@ nav a:active {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-image: url("/resources/5468BA0F-B432-4B56-AC57-0BCB37EEC949_1_201_a.jpeg");
+  background-image: url("resources/5468BA0F-B432-4B56-AC57-0BCB37EEC949_1_201_a.jpeg");
   background-position: center center;
   background-size: cover;
   
@@ -432,7 +432,7 @@ nav a:active {
 
 
 #footer .column {
-  width: 25%;
+  width: 33.3333%;
   padding: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
